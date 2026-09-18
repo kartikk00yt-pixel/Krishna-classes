@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Krishna Classes - Contact & Inquiry</title>
+  <title>Krishna Classes - Courses</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
@@ -21,95 +21,162 @@
     </a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="courses.html">Courses</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="courses.html" class="active">Courses</a></li>
+      <li><a href="contact.html">Contact</a></li>
       <li><a href="contact.html" class="btn btn-navy">Enroll Now</a></li>
     </ul>
   </nav>
 
-  <!-- CONTACT CONTAINER -->
-  <div class="contact-container">
+  <!-- HEADER -->
+  <div class="page-header">
+    <h1>Our Programs</h1>
+    <p>Explore our meticulously designed courses aiming to provide practical knowledge and academic excellence.</p>
+  </div>
+
+  <!-- TOGGLE TABS -->
+  <div class="tabs-container">
+    <div class="tabs-wrapper">
+      <button class="tab-btn active" id="btn-comp" onclick="toggleTab('computer')">
+        <i class="fa-solid fa-laptop"></i> Computer
+      </button>
+      <button class="tab-btn" id="btn-comm" onclick="toggleTab('commerce')">
+        <i class="fa-solid fa-chart-line"></i> Commerce
+      </button>
+    </div>
+  </div>
+
+  <!-- COURSES CONTAINER -->
+  <div class="courses-grid">
     
-    <!-- LEFT CARD: CONTACT INFO -->
-    <div class="contact-info">
-      <h3 style="font-size: 1.3rem; color: var(--primary-navy);">Contact Information</h3>
-      
-      <div class="info-item">
-        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
-        <div class="info-details">
-          <h4>Our Location</h4>
-          <p>Near Water Works, Kalandri,<br>Sirohi, Rajasthan, 307802</p>
+    <!-- COMPUTER TAB CONTENT -->
+    <div class="tab-content active" id="computer-section">
+      <div class="course-card">
+        <div>
+          <h3>RS-CIT</h3>
+          <div class="course-meta">
+            <span><i class="fa-regular fa-clock"></i> 3 Months</span>
+            <span><i class="fa-solid fa-signal"></i> Basic to Intermediate</span>
+          </div>
+          <p>Rajasthan State Certificate course in Information Technology. High-quality and low-cost IT literacy program.</p>
+          <ul class="course-features">
+            <li><i class="fa-regular fa-circle-check"></i> Government Recognized</li>
+            <li><i class="fa-regular fa-circle-check"></i> MS Office Suite</li>
+            <li><i class="fa-regular fa-circle-check"></i> Internet Basics</li>
+          </ul>
         </div>
+        <a href="contact.html" class="btn btn-navy" style="width: 100%;">Inquire Now</a>
       </div>
 
-      <div class="info-item">
-        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
-        <div class="info-details">
-          <h4>Call Us</h4>
-          <p>+91 9587460991</p>
+      <div class="course-card">
+        <div>
+          <h3>DCA</h3>
+          <div class="course-meta">
+            <span><i class="fa-regular fa-clock"></i> 1 Year</span>
+            <span><i class="fa-solid fa-signal"></i> Diploma</span>
+          </div>
+          <p>Diploma in Computer Applications. Comprehensive study of computer applications and database management.</p>
+          <ul class="course-features">
+            <li><i class="fa-regular fa-circle-check"></i> Full Diploma</li>
+            <li><i class="fa-regular fa-circle-check"></i> Practical Training</li>
+            <li><i class="fa-regular fa-circle-check"></i> Job Oriented</li>
+          </ul>
         </div>
+        <a href="contact.html" class="btn btn-navy" style="width: 100%;">Inquire Now</a>
       </div>
 
-      <div class="info-item">
-        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
-        <div class="info-details">
-          <h4>Email Us</h4>
-          <p>vijaytr@gmail.com</p>
+      <div class="course-card">
+        <div>
+          <h3>Tally Prime & GST</h3>
+          <div class="course-meta">
+            <span><i class="fa-regular fa-clock"></i> 3 Months</span>
+            <span><i class="fa-solid fa-signal"></i> Professional</span>
+          </div>
+          <p>Industry-ready accounting course. Learn computerized accounting, inventory management, and GST returns.</p>
+          <ul class="course-features">
+            <li><i class="fa-regular fa-circle-check"></i> Latest Software</li>
+            <li><i class="fa-regular fa-circle-check"></i> Real Scenarios</li>
+            <li><i class="fa-regular fa-circle-check"></i> Job Ready</li>
+          </ul>
         </div>
-      </div>
-
-      <div class="info-item">
-        <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
-        <div class="info-details">
-          <h4>Office Hours</h4>
-          <p>Mon - Sat: 9:00 AM - 7:00 PM<br>Sunday: Closed</p>
-        </div>
+        <a href="contact.html" class="btn btn-navy" style="width: 100%;">Inquire Now</a>
       </div>
     </div>
 
-    <!-- RIGHT CARD: INQUIRY FORM -->
-    <div class="contact-form">
-      <h3 style="font-size: 1.3rem; color: var(--primary-navy);">Send an Inquiry</h3>
-      <p style="font-size: 0.85rem; color: var(--text-muted);">Have questions about our courses or admission process? Drop us a message!</p>
-
-      <form onsubmit="alert('Thank you! Your inquiry has been sent successfully.'); return false;">
-        <div class="form-grid">
-          <div class="form-group">
-            <label>Full Name</label>
-            <input type="text" placeholder="John Doe" required>
+    <!-- COMMERCE TAB CONTENT (INCLUDING 11TH & 12TH COMMERCE) -->
+    <div class="tab-content" id="commerce-section">
+      <div class="course-card">
+        <div>
+          <h3>11th Commerce Classes</h3>
+          <div class="course-meta">
+            <span><i class="fa-regular fa-clock"></i> 1 Academic Year</span>
+            <span><i class="fa-solid fa-signal"></i> Foundation</span>
           </div>
-          <div class="form-group">
-            <label>Phone Number</label>
-            <input type="tel" placeholder="+91 XXXXX XXXXX" required>
-          </div>
-          <div class="form-group">
-            <label>Email Address</label>
-            <input type="email" placeholder="john@example.com" required>
-          </div>
-          <div class="form-group">
-            <label>Course of Interest</label>
-            <select required>
-              <option value="">Select a category</option>
-              <option>11th Commerce Classes</option>
-              <option>12th Commerce Classes</option>
-              <option>RS-CIT Course</option>
-              <option>DCA Diploma</option>
-              <option>Tally Prime & GST</option>
-            </select>
-          </div>
-          <div class="form-group full">
-            <label>Your Message</label>
-            <textarea rows="4" placeholder="Tell us what you're looking for..."></textarea>
-          </div>
+          <p>Build a strong base in Accounts, Business Studies, and Economics for high school commerce students.</p>
+          <ul class="course-features">
+            <li><i class="fa-regular fa-circle-check"></i> Basic Bookkeeping & Accounts</li>
+            <li><i class="fa-regular fa-circle-check"></i> Microeconomics Foundations</li>
+            <li><i class="fa-regular fa-circle-check"></i> Weekly Conceptual Tests</li>
+          </ul>
         </div>
-        <br>
-        <button type="submit" class="btn btn-navy" style="width: 100%;">
-          Submit Inquiry <i class="fa-solid fa-paper-plane" style="margin-left: 5px;"></i>
-        </button>
-      </form>
+        <a href="contact.html" class="btn btn-navy" style="width: 100%;">Inquire Now</a>
+      </div>
+
+      <div class="course-card">
+        <div>
+          <h3>12th Commerce Classes</h3>
+          <div class="course-meta">
+            <span><i class="fa-regular fa-clock"></i> 1 Academic Year</span>
+            <span><i class="fa-solid fa-signal"></i> Board Exam Special</span>
+          </div>
+          <p>Intensive preparation for 12th Board examinations with focus on top marks and fast problem solving.</p>
+          <ul class="course-features">
+            <li><i class="fa-regular fa-circle-check"></i> Partnership & Company Accounts</li>
+            <li><i class="fa-regular fa-circle-check"></i> Macroeconomics & Business Prep</li>
+            <li><i class="fa-regular fa-circle-check"></i> Board Pattern Mock Exams</li>
+          </ul>
+        </div>
+        <a href="contact.html" class="btn btn-navy" style="width: 100%;">Inquire Now</a>
+      </div>
+
+      <div class="course-card">
+        <div>
+          <h3>B.Com & Professional Prep</h3>
+          <div class="course-meta">
+            <span><i class="fa-regular fa-clock"></i> Flexible</span>
+            <span><i class="fa-solid fa-signal"></i> Higher Studies</span>
+          </div>
+          <p>Advanced coaching for college students and aspirants preparing for CA/CS foundation exams.</p>
+          <ul class="course-features">
+            <li><i class="fa-regular fa-circle-check"></i> Corporate Accounting</li>
+            <li><i class="fa-regular fa-circle-check"></i> Business Laws & Audit</li>
+            <li><i class="fa-regular fa-circle-check"></i> Career Guidance</li>
+          </ul>
+        </div>
+        <a href="contact.html" class="btn btn-navy" style="width: 100%;">Inquire Now</a>
+      </div>
     </div>
 
   </div>
 
+  <script>
+    function toggleTab(type) {
+      const compBtn = document.getElementById('btn-comp');
+      const commBtn = document.getElementById('btn-comm');
+      const compSec = document.getElementById('computer-section');
+      const commSec = document.getElementById('commerce-section');
+
+      if (type === 'computer') {
+        compBtn.classList.add('active');
+        commBtn.classList.remove('active');
+        compSec.classList.add('active');
+        commSec.classList.remove('active');
+      } else {
+        commBtn.classList.add('active');
+        compBtn.classList.remove('active');
+        commSec.classList.add('active');
+        compSec.classList.remove('active');
+      }
+    }
+  </script>
 </body>
 </html>
