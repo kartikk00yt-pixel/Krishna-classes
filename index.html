@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishna Classes - Contact & Inquiry</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="logo-container">
+      <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+      <div class="logo-text">
+        <h2>Krishna Classes</h2>
+        <span>COMPUTER & COMMERCE</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="btn btn-navy">Enroll Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTACT CONTAINER -->
+  <div class="contact-container">
+    
+    <!-- LEFT CARD: CONTACT INFO -->
+    <div class="contact-info">
+      <h3 style="font-size: 1.3rem; color: var(--primary-navy);">Contact Information</h3>
+      
+      <div class="info-item">
+        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+        <div class="info-details">
+          <h4>Our Location</h4>
+          <p>Near Water Works, Kalandri,<br>Sirohi, Rajasthan, 307802</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+        <div class="info-details">
+          <h4>Call Us</h4>
+          <p>+91 9587460991</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+        <div class="info-details">
+          <h4>Email Us</h4>
+          <p>vijaytr@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="info-item">
+        <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+        <div class="info-details">
+          <h4>Office Hours</h4>
+          <p>Mon - Sat: 9:00 AM - 7:00 PM<br>Sunday: Closed</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT CARD: INQUIRY FORM -->
+    <div class="contact-form">
+      <h3 style="font-size: 1.3rem; color: var(--primary-navy);">Send an Inquiry</h3>
+      <p style="font-size: 0.85rem; color: var(--text-muted);">Have questions about our courses or admission process? Drop us a message!</p>
+
+      <form onsubmit="alert('Thank you! Your inquiry has been sent successfully.'); return false;">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="john@example.com" required>
+          </div>
+          <div class="form-group">
+            <label>Course of Interest</label>
+            <select required>
+              <option value="">Select a category</option>
+              <option>11th Commerce Classes</option>
+              <option>12th Commerce Classes</option>
+              <option>RS-CIT Course</option>
+              <option>DCA Diploma</option>
+              <option>Tally Prime & GST</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label>Your Message</label>
+            <textarea rows="4" placeholder="Tell us what you're looking for..."></textarea>
+          </div>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-navy" style="width: 100%;">
+          Submit Inquiry <i class="fa-solid fa-paper-plane" style="margin-left: 5px;"></i>
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+</body>
+</html>
